@@ -138,7 +138,7 @@ RSpec.describe Curator do
     end
 
     it 'can return photographs taken by an artist from a specific country' do
-      expect(@curator.photographs_taken_by_artist_from("United States")).to eq([@photo_2, @photo_3, @photo_4)
+      expect(@curator.photographs_taken_by_artist_from("United States")).to eq([@photo_2, @photo_3, @photo_4])
       expect(@curator.photographs_taken_by_artist_from("Argentina")).to eq([])
     end
   end
