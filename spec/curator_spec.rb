@@ -142,4 +142,36 @@ RSpec.describe Curator do
       expect(@curator.photographs_taken_by_artist_from("Argentina")).to eq([])
     end
   end
+
+  describe 'iteration 4' do
+    before :each do
+      @curator = Curator.new
+    end
+      #
+      # @curator.load_photographs('./data/photographs.csv')
+      #
+      # @curator.load_artists('./data/artists.csv')
+      #
+      # @curator.photographs_taken_between(1950..1965)
+      # #=> [#<Photograph:0x00007fd986254740...>, #<Photograph:0x00007fd986254678...>]
+      #
+      # @diane_arbus = curator.find_artist_by_id("3")
+      #
+      # @curator.artists_photographs_by_age(diane_arbus)
+      # => {44=>"Identical Twins, Roselle, New Jersey", 39=>"Child with Toy Hand Grenade in Central Park"}
+      # ```
+
+
+    # 10. Curator #load_photographs && #load_artists
+    # 11. Curator #photographs_taken_between
+    # 12. Curator #artists_photographs_by_age
+    # Use TDD to add the following methods to your Curator class:
+    #
+    # load_photographs(file) - This method takes a path to a CSV file containing photographs and adds them to the Curator. You may find the included FileIO class useful.
+    # load_artists(file) - This method takes a path to a CSV file containing artists and adds them to the Curator. You may find the included FileIO class useful.
+    # photographs_taken_between(range) - This method takes a range and returns an array of all photographs with a year that falls in that range.
+    # artists_photographs_by_age(artist)- This method takes an Artist object and return a hash where the keys are the Artists age when they took a photograph, and the values are the names of the photographs.
+    # pry(main)> require './lib/curator'
+    end
+  end
 end
