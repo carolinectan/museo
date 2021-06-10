@@ -9,7 +9,7 @@ RSpec.describe Photograph do
                     artist_id: "4",
                     year: "1954"
                   }
-    photograph = Photograph.new(attributes)
+    @photograph = Photograph.new(attributes)
   end
 
   it 'initializes with attributes' do
