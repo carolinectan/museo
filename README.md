@@ -64,6 +64,8 @@ pry(main)> artist.country
 
 pry(main)> artist.age_at_death
 #=> 82
+
+##############
 Iteration 2
 There are **3** points possible in Iteration 2:
 
@@ -140,6 +142,8 @@ pry(main)> curator.artists
 
 pry(main)> curator.find_artist_by_id("1")
 # => #<Artist:0x00007fb3d8b4ed60...>
+
+##############
 Iteration 3
 There are **3** points possible in Iteration 2:
 
@@ -253,6 +257,8 @@ pry(main)> curator.photographs_taken_by_artist_from("United States")
 
 pry(main)> curator.photographs_taken_by_artist_from("Argentina")
 # => []
+
+##############
 Iteration 4
 There are **3** points possible in Iteration 2:
 
